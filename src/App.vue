@@ -9,7 +9,6 @@
     <mm-button type="success">success</mm-button>
     <mm-button type="error">error</mm-button>
     <mm-button type="warning">warning</mm-button>
-    <mm-button type="info">info</mm-button>
     <p>2.按钮尺寸 - size</p>
     <mm-button size="big">big</mm-button>
     <mm-button size="small">small</mm-button>
@@ -17,6 +16,9 @@
     <p>3.按钮形状 - shape </p>
     <mm-button shape="circle">big</mm-button>
     <mm-button shape="rectangle">small</mm-button>
+    <p>------------------------------------------------------</p>
+    <h3>Toast组件</h3>
+    <mm-toast></mm-toast>
   </div>
 </template>
 

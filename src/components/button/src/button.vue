@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "mm-button",
+  name: "mm-button", //name重要性，使用组件时的名称 <mm-button></mm-button>
   data() {
     return {
       preClass: "mm-btn" //默认的class名称
@@ -20,9 +20,9 @@ export default {
     },
     type: {
       type: String,
-      default: "default", //'default',success','warning','error','info'
+      default: "default", //'default',success','warning','error'
       validator(value) {
-        let types = ["default", "success", "warning", "error", "info"];
+        let types = ["default", "success", "warning", "error"];
         return types.includes(value) || "default";
       }
     },
