@@ -1,3 +1,4 @@
+$color: red;
 .mm-btn {
   display: inline-block;
   text-align: center;
@@ -8,14 +9,14 @@
   line-height: 30px;
   height: 32px;
   border-radius: 4px;
-  outline: none
+  outline: none;
 }
 
 .mm-btn-default {
   color: #333;
   border-color: #ddd;
   background: #fff;
-  font-weight: 400
+  font-weight: 400;
 }
 
 .mm-btn-success {
@@ -26,12 +27,12 @@
 
   &:hover {
     background-color: #2bde99;
-    border-color: #2bde99
+    border-color: #2bde99;
   }
 
   &:active {
     background-color: #1fc786;
-    border-color: #1fc786
+    border-color: #1fc786;
   }
 }
 
@@ -43,12 +44,12 @@
 
   &:hover {
     background-color: #eb3131;
-    border-color: #eb3131
+    border-color: #eb3131;
   }
 
   &:active {
     background-color: #e31616;
-    border-color: #e31616
+    border-color: #e31616;
   }
 }
 
@@ -60,12 +61,12 @@
 
   &:hover {
     background-color: #ffba1a;
-    border-color: #ffba1a
+    border-color: #ffba1a;
   }
 
   &:active {
     background-color: #f5ab00;
-    border-color: #f5ab00
+    border-color: #f5ab00;
   }
 }
 
@@ -77,49 +78,46 @@
 
   &:hover {
     background-color: #0c6bff;
-    border-color: #0c6bff
+    border-color: #0c6bff;
   }
 
   &:active {
     background-color: #005be7;
-    border-color: #005be7
+    border-color: #005be7;
   }
 }
-
-
 
 .mm-btn:disabled {
   color: #999;
   cursor: not-allowed;
   border-color: #ddd;
   background: #eee;
-
 }
 
 .mm-btn-small {
   padding: 0 5px;
   font-size: 12px;
   line-height: 20px;
-  height: 24px
+  height: 24px;
 }
 
 .mm-btn-big {
   padding: 0 20px;
   font-size: 14px;
   line-height: 34px;
-  height: 36px
+  height: 36px;
 }
 
 .mm-btn-middle {
   padding: 0 28px;
   font-size: 14px;
   line-height: 38px;
-  height: 40px
+  height: 40px;
 }
 .mm-btn-circle {
-  border-radius: 28px
+  border-radius: 28px;
 }
 
 .mm-btn-rectangle {
-  border-radius: 0
+  border-radius: 0;
 }

@@ -1,4 +1,5 @@
 import Button from "./button";
+import "./index.scss";
 
 // 所有组件列表
 const components = {
