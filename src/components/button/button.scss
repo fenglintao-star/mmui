@@ -20,53 +20,50 @@ $color: red;
 }
 
 .mm-btn-success {
-  color: #fff;
-  border-color: #20d08c;
-  background: #20d08c;
-  font-weight: 400;
+  border: 1px solid #00d378;
+  border-radius: 14px;
+  color: #00d378;
 
   &:hover {
     background-color: #2bde99;
-    border-color: #2bde99;
+    color: #fff;
   }
 
   &:active {
-    background-color: #1fc786;
-    border-color: #1fc786;
+    background-color: #00d378;
+    border-color: #00d378;
   }
 }
 
 .mm-btn-error {
-  color: #fff;
-  border-color: #e91a1a;
-  background: #e91a1a;
-  font-weight: 400;
+  color: #ff8682;
+  border: 1px solid #ff8682;
+  border-radius: 14px;
 
   &:hover {
     background-color: #eb3131;
-    border-color: #eb3131;
+    color: #fff;
   }
 
   &:active {
-    background-color: #e31616;
-    border-color: #e31616;
+    background-color: #ff8682;
+    border-color: #ff8682;
   }
 }
 
 .mm-btn-warning {
-  color: #fff;
-  border-color: #ffb200;
-  background: #ffb200;
-  font-weight: 400;
+  color: #febd3d;
+  border: 1px solid #febd3d;
+  border-radius: 14px;
 
   &:hover {
     background-color: #ffba1a;
-    border-color: #ffba1a;
+    color: #fff;
   }
 
   &:active {
-    background-color: #f5ab00;
-    border-color: #f5ab00;
+    background-color: #febd3d;
+    border-color: #febd3d;
   }
 }
 
