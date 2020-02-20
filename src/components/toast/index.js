@@ -1,7 +1,7 @@
 import Vue from "vue";
 import Toast from "./src/toast.vue";
 
-// 返回一个扩展实例构造器
+// 返回一个扩展实例构造器;
 const ToastConstructor = Vue.extend(Toast);
 
 /**
@@ -19,11 +19,13 @@ function showToast(tips, duration = 1000) {
       };
     }
   });
+  // Vue.component(toastDom.$options.name, Toast); // 绑定不上name属性
   // 把实例化的toast组件添加到body里
   document.body.appendChild(toastDom.$el);
   // duration时间过后去隐藏
   setTimeout(() => {
-    toastDom.show = false;
+    console.log(toastDom.$options.name);
+    // toastDom.show = false;
   }, duration);
 }
 
