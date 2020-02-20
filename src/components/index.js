@@ -1,10 +1,8 @@
 import Button from "./button";
-import Toast from "./toast";
 
 // 所有组件列表
 const components = {
-  Button,
-  Toast
+  Button
 };
 
 // 定义install方法，接收Vue作为参数
@@ -14,7 +12,6 @@ const install = Vue => {
   // 遍历注册所有组件
   Object.keys(components).forEach(key => {
     Vue.component(components[key].name, components[key]);
-    console.log(components[key].name);
   });
 };
 // 检测到Vue才执行
