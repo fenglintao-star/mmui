@@ -16,7 +16,7 @@
     <mm-button shape="circle">circle</mm-button>
     <mm-button shape="rectangle">rectangle</mm-button>
     <p>------------------------------------------------------</p>
-    <h3>Toast组件</h3>
+    <h3>Toast全局组件</h3>
   </div>
 </template>
 
@@ -29,11 +29,12 @@ export default {
     };
   },
   mounted() {
-    setTimeout(() => {
-      this.$toast({
-        tips: "Toast提示"
-      });
-    }, 1200);
+    // setTimeout(() => {
+    //   this.$toast({
+    //     tips: "Toast提示",
+    //     type: "warning"
+    //   });
+    // }, 1200);
   }
 };
 </script>
