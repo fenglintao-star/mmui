@@ -10,8 +10,8 @@
     "start": "npm run dev",
     "lint": "eslint --ext .js,.vue src",
     "build": "node build/build.js",
-    "package:dev": "webpack --config build/package.dev.config.js",
-    "package:prod": "webpack --config build/package.prod.config.js",
+    "package:dev": "webpack --config config/package.dev.config.js",
+    "package:prod": "webpack --config config/package.prod.config.js",
     "package": "npm run package:prod && npm publish && npm run build"
   },
   "dependencies": {
