@@ -9,12 +9,10 @@
     <mm-button type="success">success</mm-button>
     <mm-button type="error">error</mm-button>
     <mm-button type="warning">warning</mm-button>
-    <p>2.按钮尺寸 - size + shape</p>
-    <mm-button size="big">big</mm-button>
-    <mm-button size="small">small</mm-button>
-    <mm-button size="middle">middle</mm-button>
-    <mm-button shape="circle">circle</mm-button>
-    <mm-button shape="rectangle">rectangle</mm-button>
+    <p>2.按钮尺寸 - size + radius</p>
+    <mm-button width="50">small</mm-button>
+    <mm-button width="100">big</mm-button>
+    <mm-button radius="100">circle</mm-button>
     <p>------------------------------------------------------</p>
     <h3>Toast全局组件</h3>
   </div>
@@ -32,7 +30,8 @@ export default {
     // setTimeout(() => {
     //   this.$toast({
     //     tips: "Toast提示",
-    //     type: "warning"
+    //     type: "success",
+    //     radius: "100"
     //   });
     // }, 1200);
   }

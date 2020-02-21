@@ -1,6 +1,10 @@
 <template>
-  <div :class="classTips" v-if="tips!=''">
-    <slot>{{tips}}</slot>
+  <div
+    :class="classTips"
+    v-if="tips != ''"
+    :style="{ 'border-radius': radius + 'px' }"
+  >
+    <slot>{{ tips }}</slot>
   </div>
 </template>
 <script>

@@ -13,7 +13,8 @@ export default {
           return {
             tips: options.tips || "", //提示文案
             duration: options.duration || 3000, //展示时长
-            type: options.type || "default"
+            type: options.type || "default", //展示类型
+            radius: options.radius || "0" //圆角设置
           };
         }
       }).$mount(toastDom);

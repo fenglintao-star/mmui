@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "mmui",
   "author": "f925692201 <925692201@qq.com>",
-  "private": true,
+  "private": false,
   "main": "package/mmui.min.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",

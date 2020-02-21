@@ -1,5 +1,5 @@
 <template>
-  <button :class="classBtn" :disabled="isDisabled">
+  <button :class="classBtn" :disabled="isDisabled" :style="{'width':width+'px','height':height+'px','border-radius':radius+'px'}">
     <slot></slot>
   </button>
 </template>
@@ -15,11 +15,6 @@ export default {
   props: {
     //禁用状态
     isDisabled: Boolean,
-    //形状
-    shape: {
-      type: String,
-      default: "" //'circle'圆角, 'rectangle'直角
-    },
     //类型
     type: {
       type: String,
@@ -30,21 +25,28 @@ export default {
       }
     },
     //尺寸
-    size: {
+    width: {
       type: String,
-      default: "" //'big','middle', 'small'
+      default: "80"
+    },
+    height: {
+      type: String,
+      default: "30"
+    },
+    //形状
+    radius: {
+      type: String,
+      default: "0"
     }
   },
   computed: {
     //定义多个className
     classBtn() {
-      let { preClass, type, size, shape } = this;
+      let { preClass, type } = this;
       let className = [
         `${preClass}`,
         {
-          [`${preClass}-${type}`]: !!type,
-          [`${preClass}-${size}`]: !!size,
-          [`${preClass}-${shape}`]: !!shape
+          [`${preClass}-${type}`]: !!type
         }
       ];
       return className;

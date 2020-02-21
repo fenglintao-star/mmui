@@ -1,4 +1,4 @@
-$color: red;
+$sucColor: #00d378;
 .mm-btn {
   display: inline-block;
   text-align: center;
@@ -27,11 +27,6 @@ $color: red;
     background-color: #2bde99;
     color: #fff;
   }
-
-  &:active {
-    background-color: #00d378;
-    border-color: #00d378;
-  }
 }
 
 .mm-btn-error {
@@ -42,11 +37,6 @@ $color: red;
     background-color: #eb3131;
     color: #fff;
   }
-
-  &:active {
-    background-color: #ff8682;
-    border-color: #ff8682;
-  }
 }
 
 .mm-btn-warning {
@@ -56,28 +46,6 @@ $color: red;
   &:hover {
     background-color: #ffba1a;
     color: #fff;
-  }
-
-  &:active {
-    background-color: #febd3d;
-    border-color: #febd3d;
-  }
-}
-
-.mm-btn-info {
-  color: #fff;
-  border-color: #005ff1;
-  background: #005ff1;
-  font-weight: 400;
-
-  &:hover {
-    background-color: #0c6bff;
-    border-color: #0c6bff;
-  }
-
-  &:active {
-    background-color: #005be7;
-    border-color: #005be7;
   }
 }
 
