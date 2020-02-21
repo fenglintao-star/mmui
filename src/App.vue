@@ -9,16 +9,14 @@
     <mm-button type="success">success</mm-button>
     <mm-button type="error">error</mm-button>
     <mm-button type="warning">warning</mm-button>
-    <p>2.按钮尺寸 - size</p>
+    <p>2.按钮尺寸 - size + shape</p>
     <mm-button size="big">big</mm-button>
     <mm-button size="small">small</mm-button>
     <mm-button size="middle">middle</mm-button>
-    <p>3.按钮形状 - shape </p>
-    <mm-button shape="circle">big</mm-button>
-    <mm-button shape="rectangle">small</mm-button>
+    <mm-button shape="circle">circle</mm-button>
+    <mm-button shape="rectangle">rectangle</mm-button>
     <p>------------------------------------------------------</p>
     <h3>Toast组件</h3>
-    <mm-toast></mm-toast>
   </div>
 </template>
 
@@ -29,6 +27,13 @@ export default {
     return {
       msg: `蚂木的UI组件库`
     };
+  },
+  mounted() {
+    setTimeout(() => {
+      this.$toast({
+        tips: "Toast提示"
+      });
+    }, 1200);
   }
 };
 </script>

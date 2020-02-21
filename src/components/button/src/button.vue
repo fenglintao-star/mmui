@@ -13,26 +13,30 @@ export default {
     };
   },
   props: {
-    isDisabled: Boolean, //是否禁用
+    //禁用状态
+    isDisabled: Boolean,
+    //形状
     shape: {
       type: String,
       default: "" //'circle'圆角, 'rectangle'直角
     },
+    //类型
     type: {
       type: String,
       default: "default", //'default',success','warning','error'
-      validator(value) {
+      validator(val) {
         let types = ["default", "success", "warning", "error"];
-        return types.includes(value) || "default";
+        return types.includes(val) || !val;
       }
     },
+    //尺寸
     size: {
       type: String,
       default: "" //'big','middle', 'small'
     }
   },
   computed: {
-    //绑定class
+    //定义多个className
     classBtn() {
       let { preClass, type, size, shape } = this;
       let className = [

@@ -1,28 +1,37 @@
 <template>
-  <div :class="classTost" v-show="true" :style="{width:size.width + 'px',height:size.height+'px'}">
-    <slot>toast提示</slot>
+  <div :class="classTips" v-if="tips!=''">
+    <slot>{{tips}}</slot>
   </div>
 </template>
 <script>
 export default {
   name: "mm-toast",
   data() {
-    return {};
+    return {
+      preClass: "mm-toast"
+    };
   },
   props: {
-    default: "default", //'success','wran','error'
-    size: {
-      type: Object,
-      default: () => {
-        return {
-          width: "100",
-          height: "30"
-        };
+    type: {
+      type: String,
+      default: "default",
+      validator(val) {
+        let types = ["default", "success", "warning", "error"];
+        return types.includes(val) || !val;
       }
     }
   },
   computed: {
-    classTost() {}
+    classTips() {
+      let { preClass, type } = this;
+      let className = [
+        `${preClass}`,
+        {
+          [`${preClass}-${type}`]: !!type
+        }
+      ];
+      return className;
+    }
   }
 };
 </script>

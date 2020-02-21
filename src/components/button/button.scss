@@ -21,7 +21,6 @@ $color: red;
 
 .mm-btn-success {
   border: 1px solid #00d378;
-  border-radius: 14px;
   color: #00d378;
 
   &:hover {
@@ -38,7 +37,6 @@ $color: red;
 .mm-btn-error {
   color: #ff8682;
   border: 1px solid #ff8682;
-  border-radius: 14px;
 
   &:hover {
     background-color: #eb3131;
@@ -54,7 +52,6 @@ $color: red;
 .mm-btn-warning {
   color: #febd3d;
   border: 1px solid #febd3d;
-  border-radius: 14px;
 
   &:hover {
     background-color: #ffba1a;

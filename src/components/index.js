@@ -1,11 +1,12 @@
+import Vue from "vue";
 import "./index.scss";
 import Button from "./button";
-import Toast from "./toast";
+import Toast from "./Toast";
+Vue.use(Toast);
 
 // 所有组件列表
 const components = {
-  Button,
-  Toast
+  Button
 };
 
 // 定义install方法，接收Vue作为参数
